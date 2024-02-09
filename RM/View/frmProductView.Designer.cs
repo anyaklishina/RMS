@@ -43,6 +43,15 @@
             ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             this.SuspendLayout();
             // 
+            // label1
+            // 
+            this.label1.Location = new System.Drawing.Point(550, 65);
+            // 
+            // label2
+            // 
+            this.label2.Size = new System.Drawing.Size(260, 32);
+            this.label2.Text = "Информация о блюде";
+            // 
             // btnAdd
             // 
             this.btnAdd.CheckedState.ImageSize = new System.Drawing.Size(64, 64);
@@ -50,15 +59,6 @@
             this.btnAdd.HoverState.ImageSize = new System.Drawing.Size(55, 55);
             this.btnAdd.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Normal;
             this.btnAdd.PressedState.ImageSize = new System.Drawing.Size(52, 52);
-            // 
-            // label2
-            // 
-            this.label2.Size = new System.Drawing.Size(175, 32);
-            this.label2.Text = "Детали товара";
-            // 
-            // label1
-            // 
-            this.label1.Location = new System.Drawing.Point(543, 71);
             // 
             // guna2DataGridView1
             // 
@@ -103,7 +103,7 @@
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 35;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(812, 448);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(821, 441);
             this.guna2DataGridView1.TabIndex = 6;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -199,13 +199,13 @@
             this.dgvdel.ReadOnly = true;
             this.dgvdel.Width = 50;
             // 
-            // frnProductView
+            // frmProductView
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(901, 607);
+            this.ClientSize = new System.Drawing.Size(910, 600);
             this.Controls.Add(this.guna2DataGridView1);
-            this.Name = "frnProductView";
+            this.Name = "frmProductView";
             this.Text = "frnProductView";
             this.Load += new System.EventHandler(this.frnProductView_Load);
             this.Controls.SetChildIndex(this.label1, 0);

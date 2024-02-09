@@ -89,8 +89,10 @@ namespace RM.Model
                 id = 0;
                 cID = 0;
                 txtName.Text = "";
-                txtPhone.Text = "";
-                cbRole.SelectedIndex = -1;
+                txtPrice.Text = "";
+                cbCat.SelectedIndex = 0;
+                cbCat.SelectedIndex = -1;
+
                 txtImage.Image = RM.Properties.Resources.breakfast;
 
                 txtName.Focus();

@@ -43,7 +43,7 @@ namespace RM.View
             //frmCategoryAdd frm = new frmCategoryAdd();
             //frm.ShowDialog();
 
-            MainClass.BlurBackground(new frmProductAdd());
+            MainClass.BlurBackground(new frmStaffAdd());
             GetData();
         }
 
@@ -57,7 +57,7 @@ namespace RM.View
             if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvedit")
             {
 
-                frmProductAdd frm = new frmProductAdd();
+                frmStaffAdd frm = new frmStaffAdd();
                 frm.id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
                 frm.txtName.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvName"].Value);
                 frm.txtPhone.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvPhone"].Value);
@@ -74,7 +74,7 @@ namespace RM.View
                 if (guna2MessageDialog1.Show("Вы уверены, что хотите удалить?") == DialogResult.Yes)
                 {
                     int id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
-                    string qry = "Delete from products where pID= " + id + "";
+                    string qry = "Delete from staff where pID= " + id + "";
                     Hashtable ht = new Hashtable();
                     MainClass.SQL(qry, ht);
 

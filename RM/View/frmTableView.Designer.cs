@@ -50,12 +50,12 @@
             // 
             // label2
             // 
-            this.label2.Size = new System.Drawing.Size(79, 32);
-            this.label2.Text = "Tables";
+            this.label2.Size = new System.Drawing.Size(248, 32);
+            this.label2.Text = "Информация о столе";
             // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(545, 74);
+            this.label1.Location = new System.Drawing.Point(551, 65);
             // 
             // guna2DataGridView1
             // 
@@ -97,7 +97,7 @@
             this.guna2DataGridView1.RowHeadersVisible = false;
             this.guna2DataGridView1.RowHeadersWidth = 51;
             this.guna2DataGridView1.RowTemplate.Height = 35;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(812, 374);
+            this.guna2DataGridView1.Size = new System.Drawing.Size(813, 388);
             this.guna2DataGridView1.TabIndex = 5;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -175,7 +175,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 23F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(909, 586);
+            this.ClientSize = new System.Drawing.Size(910, 600);
             this.Controls.Add(this.guna2DataGridView1);
             this.Name = "frmTableView";
             this.Text = "frmTableView";

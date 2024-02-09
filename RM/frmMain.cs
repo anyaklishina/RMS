@@ -70,5 +70,6 @@ namespace RM
         {
             AddControls(new frmProductView());
         }
+
     }
 }

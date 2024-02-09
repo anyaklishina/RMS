@@ -43,9 +43,9 @@
             this.label1.AutoSize = true;
             this.label1.Location = new System.Drawing.Point(540, 73);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(61, 23);
+            this.label1.Size = new System.Drawing.Size(58, 23);
             this.label1.TabIndex = 1;
-            this.label1.Text = "Search";
+            this.label1.Text = "Поиск";
             // 
             // btnAdd
             // 
@@ -83,7 +83,7 @@
             this.txtSearch.Name = "txtSearch";
             this.txtSearch.PasswordChar = '\0';
             this.txtSearch.PlaceholderForeColor = System.Drawing.Color.Silver;
-            this.txtSearch.PlaceholderText = "Search Here";
+            this.txtSearch.PlaceholderText = "Что найти для вас?";
             this.txtSearch.SelectedText = "";
             this.txtSearch.Size = new System.Drawing.Size(320, 48);
             this.txtSearch.TabIndex = 0;
