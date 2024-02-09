@@ -1,6 +1,6 @@
 ﻿namespace RM.View
 {
-    partial class frnProductView
+    partial class frmProductView
     {
         /// <summary>
         /// Required designer variable.
@@ -51,9 +51,14 @@
             this.btnAdd.ImageFlip = Guna.UI2.WinForms.Enums.FlipOrientation.Normal;
             this.btnAdd.PressedState.ImageSize = new System.Drawing.Size(52, 52);
             // 
+            // label2
+            // 
+            this.label2.Size = new System.Drawing.Size(175, 32);
+            this.label2.Text = "Детали товара";
+            // 
             // label1
             // 
-            this.label1.Location = new System.Drawing.Point(641, 73);
+            this.label1.Location = new System.Drawing.Point(543, 71);
             // 
             // guna2DataGridView1
             // 
@@ -121,6 +126,7 @@
             this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 35;
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
             this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.guna2DataGridView1.CellClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.guna2DataGridView1_CellClick);
             // 
             // dgvSno
             // 

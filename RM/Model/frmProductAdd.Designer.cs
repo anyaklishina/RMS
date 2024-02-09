@@ -36,13 +36,13 @@
             this.label2 = new System.Windows.Forms.Label();
             this.cbCat = new Guna.UI2.WinForms.Guna2ComboBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.guna2TextBox1 = new Guna.UI2.WinForms.Guna2TextBox();
+            this.txtPrice = new Guna.UI2.WinForms.Guna2TextBox();
             this.label6 = new System.Windows.Forms.Label();
             this.guna2TextBox2 = new Guna.UI2.WinForms.Guna2TextBox();
             this.label7 = new System.Windows.Forms.Label();
             this.btnBrowse = new Guna.UI2.WinForms.Guna2Button();
-            this.guna2CirclePictureBox1 = new Guna.UI2.WinForms.Guna2CirclePictureBox();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).BeginInit();
+            this.txtImage = new Guna.UI2.WinForms.Guna2CirclePictureBox();
+            ((System.ComponentModel.ISupportInitialize)(this.txtImage)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -160,25 +160,25 @@
             this.label5.TabIndex = 13;
             this.label5.Text = "Category";
             // 
-            // guna2TextBox1
+            // txtPrice
             // 
-            this.guna2TextBox1.Cursor = System.Windows.Forms.Cursors.IBeam;
-            this.guna2TextBox1.DefaultText = "";
-            this.guna2TextBox1.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
-            this.guna2TextBox1.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
-            this.guna2TextBox1.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
-            this.guna2TextBox1.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Font = new System.Drawing.Font("Segoe UI", 9F);
-            this.guna2TextBox1.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
-            this.guna2TextBox1.Location = new System.Drawing.Point(343, 153);
-            this.guna2TextBox1.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
-            this.guna2TextBox1.Name = "guna2TextBox1";
-            this.guna2TextBox1.PasswordChar = '\0';
-            this.guna2TextBox1.PlaceholderText = "";
-            this.guna2TextBox1.SelectedText = "";
-            this.guna2TextBox1.Size = new System.Drawing.Size(274, 48);
-            this.guna2TextBox1.TabIndex = 9;
+            this.txtPrice.Cursor = System.Windows.Forms.Cursors.IBeam;
+            this.txtPrice.DefaultText = "";
+            this.txtPrice.DisabledState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(208)))), ((int)(((byte)(208)))), ((int)(((byte)(208)))));
+            this.txtPrice.DisabledState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(226)))), ((int)(((byte)(226)))), ((int)(((byte)(226)))));
+            this.txtPrice.DisabledState.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrice.DisabledState.PlaceholderForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(138)))), ((int)(((byte)(138)))), ((int)(((byte)(138)))));
+            this.txtPrice.FocusedState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrice.Font = new System.Drawing.Font("Segoe UI", 9F);
+            this.txtPrice.HoverState.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(94)))), ((int)(((byte)(148)))), ((int)(((byte)(255)))));
+            this.txtPrice.Location = new System.Drawing.Point(343, 153);
+            this.txtPrice.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
+            this.txtPrice.Name = "txtPrice";
+            this.txtPrice.PasswordChar = '\0';
+            this.txtPrice.PlaceholderText = "";
+            this.txtPrice.SelectedText = "";
+            this.txtPrice.Size = new System.Drawing.Size(274, 48);
+            this.txtPrice.TabIndex = 9;
             // 
             // label6
             // 
@@ -234,18 +234,20 @@
             this.btnBrowse.Size = new System.Drawing.Size(180, 45);
             this.btnBrowse.TabIndex = 15;
             this.btnBrowse.Text = "Browse";
+            this.btnBrowse.Click += new System.EventHandler(this.btnBrowse_Click);
             // 
-            // guna2CirclePictureBox1
+            // txtImage
             // 
-            this.guna2CirclePictureBox1.Image = global::RM.Properties.Resources.breakfast;
-            this.guna2CirclePictureBox1.ImageRotate = 0F;
-            this.guna2CirclePictureBox1.Location = new System.Drawing.Point(684, 153);
-            this.guna2CirclePictureBox1.Name = "guna2CirclePictureBox1";
-            this.guna2CirclePictureBox1.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
-            this.guna2CirclePictureBox1.Size = new System.Drawing.Size(205, 257);
-            this.guna2CirclePictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.guna2CirclePictureBox1.TabIndex = 14;
-            this.guna2CirclePictureBox1.TabStop = false;
+            this.txtImage.Image = global::RM.Properties.Resources.hot_food;
+            this.txtImage.ImageRotate = 0F;
+            this.txtImage.Location = new System.Drawing.Point(684, 153);
+            this.txtImage.Name = "txtImage";
+            this.txtImage.ShadowDecoration.Mode = Guna.UI2.WinForms.Enums.ShadowMode.Circle;
+            this.txtImage.Size = new System.Drawing.Size(214, 257);
+            this.txtImage.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.txtImage.TabIndex = 14;
+            this.txtImage.TabStop = false;
+            
             // 
             // frmProductAdd
             // 
@@ -253,17 +255,17 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(950, 621);
             this.Controls.Add(this.btnBrowse);
-            this.Controls.Add(this.guna2CirclePictureBox1);
+            this.Controls.Add(this.txtImage);
             this.Controls.Add(this.cbCat);
             this.Controls.Add(this.label5);
-            this.Controls.Add(this.guna2TextBox1);
+            this.Controls.Add(this.txtPrice);
             this.Controls.Add(this.label6);
             this.Controls.Add(this.guna2TextBox2);
             this.Controls.Add(this.label7);
             this.Name = "frmProductAdd";
             this.Text = "frmProductAdd";
             this.Load += new System.EventHandler(this.frmProductAdd_Load);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2CirclePictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.txtImage)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -279,11 +281,11 @@
         private System.Windows.Forms.Label label2;
         public Guna.UI2.WinForms.Guna2ComboBox cbCat;
         private System.Windows.Forms.Label label5;
-        public Guna.UI2.WinForms.Guna2TextBox guna2TextBox1;
+        public Guna.UI2.WinForms.Guna2TextBox txtPrice;
         private System.Windows.Forms.Label label6;
         public Guna.UI2.WinForms.Guna2TextBox guna2TextBox2;
         private System.Windows.Forms.Label label7;
-        private Guna.UI2.WinForms.Guna2CirclePictureBox guna2CirclePictureBox1;
+        private Guna.UI2.WinForms.Guna2CirclePictureBox txtImage;
         private Guna.UI2.WinForms.Guna2Button btnBrowse;
     }
 }

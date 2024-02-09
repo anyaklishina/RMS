@@ -40,3 +40,5 @@ C:\Users\a-i-k\source\repos\RM\RMS\RM\obj\Debug\RM.csproj.CopyComplete
 C:\Users\a-i-k\source\repos\RM\RMS\RM\obj\Debug\RM.exe
 C:\Users\a-i-k\source\repos\RM\RMS\RM\obj\Debug\RM.pdb
 C:\Users\a-i-k\source\repos\RM\RMS\RM\obj\Debug\RM.Model.frmStaffAdd.resources
+C:\Users\a-i-k\source\repos\RM\RMS\RM\obj\Debug\RM.Model.frmProductAdd.resources
+C:\Users\a-i-k\source\repos\RM\RMS\RM\obj\Debug\RM.View.frmProductView.resources
