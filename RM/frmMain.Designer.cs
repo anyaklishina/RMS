@@ -219,7 +219,7 @@
             this.btnProduct.BorderRadius = 21;
             this.btnProduct.ButtonMode = Guna.UI2.WinForms.Enums.ButtonMode.RadioButton;
             this.btnProduct.CheckedState.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(192)))), ((int)(((byte)(128)))));
-            this.btnProduct.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image5")));
+            this.btnProduct.CheckedState.Image = ((System.Drawing.Image)(resources.GetObject("resource.Image1")));
             this.btnProduct.CustomizableEdges.TopLeft = false;
             this.btnProduct.CustomizableEdges.TopRight = false;
             this.btnProduct.DisabledState.BorderColor = System.Drawing.Color.DarkGray;
@@ -240,6 +240,7 @@
             this.btnProduct.Text = "Products";
             this.btnProduct.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
             this.btnProduct.TextOffset = new System.Drawing.Point(20, 0);
+            this.btnProduct.Click += new System.EventHandler(this.btnProduct_Click);
             // 
             // btnCategory
             // 

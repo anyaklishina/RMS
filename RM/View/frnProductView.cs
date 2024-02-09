@@ -12,26 +12,27 @@ using System.Windows.Forms;
 
 namespace RM.View
 {
-    public partial class frmStaffView : SampleView
+    public partial class frnProductView : SampleView
     {
-        public frmStaffView()
+        public frnProductView()
         {
             InitializeComponent();
         }
 
-        private void frmStaffView_Load(object sender, EventArgs e)
+        private void frnProductView_Load(object sender, EventArgs e)
         {
             GetData();
         }
-
         public void GetData()
         {
-            string qry = "Select * From staff where sName like '%" + txtSearch.Text + "%'  ";
+            string qry = "select pID, pName, pPrice, CategoryID, c.catName from products p inner join category c on c.catID = p.CategoryID where pName like '%" + txtSearch.Text + "%'  ";
             ListBox lb = new ListBox();
             lb.Items.Add(dgvid);
             lb.Items.Add(dgvName);
-            lb.Items.Add(dgvPhone);
-            lb.Items.Add(dgvRole);
+            lb.Items.Add(dgvPrice);
+            lb.Items.Add(dgvcatID);
+            lb.Items.Add(dgvcat);
+
 
 
             MainClass.LoadData(qry, guna2DataGridView1, lb);
@@ -43,7 +44,7 @@ namespace RM.View
             //frmCategoryAdd frm = new frmCategoryAdd();
             //frm.ShowDialog();
 
-            MainClass.BlurBackground(new frmProductAdd());
+            MainClass.BlurBackground(new frmStaffAdd());
             GetData();
         }
 
@@ -57,7 +58,7 @@ namespace RM.View
             if (guna2DataGridView1.CurrentCell.OwningColumn.Name == "dgvedit")
             {
 
-                frmProductAdd frm = new frmProductAdd();
+                frmStaffAdd frm = new frmStaffAdd();
                 frm.id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
                 frm.txtName.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvName"].Value);
                 frm.txtPhone.Text = Convert.ToString(guna2DataGridView1.CurrentRow.Cells["dgvPhone"].Value);
@@ -74,7 +75,7 @@ namespace RM.View
                 if (guna2MessageDialog1.Show("Вы уверены, что хотите удалить?") == DialogResult.Yes)
                 {
                     int id = Convert.ToInt32(guna2DataGridView1.CurrentRow.Cells["dgvid"].Value);
-                    string qry = "Delete from products where pID= " + id + "";
+                    string qry = "Delete from staff where staffID= " + id + "";
                     Hashtable ht = new Hashtable();
                     MainClass.SQL(qry, ht);
 
