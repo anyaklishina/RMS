@@ -42,3 +42,4 @@ C:\Users\a-i-k\source\repos\RM\RMS\RM\obj\Debug\RM.pdb
 C:\Users\a-i-k\source\repos\RM\RMS\RM\obj\Debug\RM.Model.frmStaffAdd.resources
 C:\Users\a-i-k\source\repos\RM\RMS\RM\obj\Debug\RM.Model.frmProductAdd.resources
 C:\Users\a-i-k\source\repos\RM\RMS\RM\obj\Debug\RM.View.frmProductView.resources
+C:\Users\a-i-k\source\repos\RM\RMS\RM\obj\Debug\RM.View.frmPOS.resources

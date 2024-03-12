@@ -71,5 +71,10 @@ namespace RM
             AddControls(new frmProductView());
         }
 
+        private void btnPOS_Click(object sender, EventArgs e)
+        {
+            frmPOS frm = new frmPOS();
+            frm.Show();
+        }
     }
 }

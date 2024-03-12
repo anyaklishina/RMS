@@ -130,6 +130,12 @@
     <Compile Include="View\frmCategoryView.Designer.cs">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\frmPOS.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="View\frmPOS.Designer.cs">
+      <DependentUpon>frmPOS.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\frmStaffView.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -187,6 +193,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmCategoryView.resx">
       <DependentUpon>frmCategoryView.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\frmPOS.resx">
+      <DependentUpon>frmPOS.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\frmStaffView.resx">
       <DependentUpon>frmStaffView.cs</DependentUpon>
@@ -315,6 +324,54 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="Resources\trash-bin.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time-left.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\add %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\time-left %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction-history.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\transaction-history %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fast-delivery.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\fast-delivery %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\take-away.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinner-table.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\take-away %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dinner-table %281%29.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chef1.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\chef %281%291.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\Vector.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
